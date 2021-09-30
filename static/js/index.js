@@ -5,7 +5,7 @@ function LED1_On() {
 	console.log("led on");
 	//document.getElementById("sensor").innerHTML="led on";
 	message = new Paho.MQTT.Message("ON");
-    	message.destinationName = "lfrenteriax@hotmail.com/test1";
+    	message.destinationName = "alexamj28@gmail.com/test";
     	client.send(message);
   
 }
@@ -13,7 +13,7 @@ function LED1_Off(){
 	//alert("led off");
 	console.log("led off");
 	message = new Paho.MQTT.Message("OFF");
-    	message.destinationName = "lfrenteriax@hotmail.com/test1";
+    	message.destinationName = "alexamj28@gmail.com/test";
     	client.send(message);
 	//document.getElementById("sensor").innerHTML="led off";
 }
@@ -22,7 +22,7 @@ function LED1_Histo(){
 	//alert("led off");
 	console.log("led off");
 	message = new Paho.MQTT.Message("Histo");
-    	message.destinationName = "lfrenteriax@hotmail.com/test1";
+    	message.destinationName = "alexamj28@gmail.com/test";
     	client.send(message);
 	//document.getElementById("sensor").innerHTML="led off";
 }
